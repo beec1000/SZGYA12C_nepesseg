@@ -28,7 +28,7 @@ namespace nepesseg
             Console.WriteLine($"Kínában a lakosság {f5} fővel volt több.");
             Console.WriteLine("6. feladat");
             var f6 = orszagok.OrderByDescending(d => d.Nepesseg).ToList()[2];
-            Console.WriteLine($"A harmadik legnépesebb ország: {f6}, a lakosság {} fő.");
+            Console.WriteLine($"A harmadik legnépesebb ország: {f6.Orszagnev}, a lakosság {f6.Nepesseg} fő.");
             Console.WriteLine("7. feladat");
             Console.WriteLine(" A következő országok több, mint 30%-a a fővárosban lakik:");
             foreach (var o in  orszagok)
